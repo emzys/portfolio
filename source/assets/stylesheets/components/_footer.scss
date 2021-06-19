@@ -40,7 +40,9 @@
 }
 
 #contact .contact-text .social-media i:hover {
-  color: #039dff;
+  // color: #039dff;
+  // color: #295130;
+  color: $theme-green;
 }
 
 @media (min-width: 411px) {

@@ -12,7 +12,6 @@
 //   width: 40px;
 // }
 
-
 nav {
   text-transform: uppercase;
   transition: background-color .5s;
@@ -25,15 +24,16 @@ nav a, nav i {
 }
 
 .navbar-brand i {
- color: cadetblue;
+//  color: cadetblue;
+  color: rgb(90, 190, 194);
 }
 
 nav a:hover, nav i:hover {
-  color: #039dff;
+  color: $theme-green;
 }
 
 nav .active {
-  color: #039dff;
+  color: $theme-green;
 }
 
 // nav i {
@@ -50,9 +50,9 @@ nav .navbar-nav {
   }
 }
 
-.bg-white {
-  // background-color: rgba(0, 0, 0, 0.7);
-  background-color: white;
+.bg-scroll {
+  background-color: rgba(0, 0, 0, 0.8);
+  // background-color: white;
 }
 
 .z-text {
