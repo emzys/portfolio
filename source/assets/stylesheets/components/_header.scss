@@ -2,7 +2,32 @@ header {
   width: 100vw;
   height: 100vh;
   display: flex;
-  justify-content: center;
+  // justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  // background-color: aquamarine;
+  // background-color: rgba(0,0,0,.8);
+  background: linear-gradient(rgba(0,0,0,.8) 70%, $theme-green 70%);
+  color: white;
+
+  & > * {
+    width: 100%;
+  }
+
+  .header-text {
+    text-align: center;
+
+    p {
+      margin: 0;
+      font-size: 70px;
+    }
+  }
+
+  img {
+    // width: 350px;
+    height: 600px;
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
 }
+
