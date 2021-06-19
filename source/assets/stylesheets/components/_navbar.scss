@@ -21,8 +21,11 @@ nav {
 nav a, nav i {
   padding: 0 10px;
   color: #e9ecef;
-  text-shadow: 2px 2px 3px black;
   transition: color .3s;
+}
+
+.navbar-brand i {
+ color: cadetblue;
 }
 
 nav a:hover, nav i:hover {
@@ -34,14 +37,42 @@ nav .active {
 }
 
 // nav i {
-//   font-size: 28px;
-// }
+  //   font-size: 28px;
+  // }
 
 nav .navbar-nav {
   font-size: 17px;
+
+  a {
+    text-shadow: 2px 2px 3px black;
+
+
+  }
 }
 
 .bg-white {
   // background-color: rgba(0, 0, 0, 0.7);
   background-color: white;
+}
+
+.z-text {
+	transform: rotateY(15deg);
+	transition: transform 1s;
+}
+
+// .z-layer:not(:first-child) {
+// 	color: #b73229;
+// }
+
+
+.z-layer:nth-child(1) {
+	color: #ffc107;
+}
+
+.z-layer:nth-child(2) {
+	color: #4caf50;
+}
+
+.z-layer:nth-child(3) {
+	color: #3f51b5;
 }

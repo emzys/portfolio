@@ -19,6 +19,7 @@ import 'bootstrap';
 //         }
 //     });
 //   }
+
 document.addEventListener('DOMContentLoaded', () => {
   const initUpdateNavbarOnScroll = () => {
     const navbar = document.querySelector('.navbar');
@@ -34,4 +35,13 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   initUpdateNavbarOnScroll();
+
+  const ztxt = new Ztextify('.navbar-brand', {
+    depth: "30px",
+    layers: 8,
+    fade: true,
+    direction: "both",
+    event: "pointer",
+    eventRotation: "35deg"
+  });
 });
