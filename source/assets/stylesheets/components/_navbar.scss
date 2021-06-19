@@ -1,12 +1,47 @@
-.navbar-lewagon {
+.navbar {
   justify-content: space-between;
-  background: white;
+  // background: white;
+  background: transparent;
 }
 
-.navbar-lewagon .navbar-collapse {
+.navbar .navbar-collapse {
   flex-grow: 0;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+// .navbar-lewagon .navbar-brand img {
+//   width: 40px;
+// }
+
+
+nav {
+  text-transform: uppercase;
+  transition: background-color .5s;
+}
+
+nav a, nav i {
+  padding: 0 10px;
+  color: #e9ecef;
+  text-shadow: 2px 2px 3px black;
+  transition: color .3s;
+}
+
+nav a:hover, nav i:hover {
+  color: #039dff;
+}
+
+nav .active {
+  color: #039dff;
+}
+
+// nav i {
+//   font-size: 28px;
+// }
+
+nav .navbar-nav {
+  font-size: 17px;
+}
+
+.bg-white {
+  // background-color: rgba(0, 0, 0, 0.7);
+  background-color: white;
 }
