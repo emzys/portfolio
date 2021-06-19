@@ -26,9 +26,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if (navbar) {
       window.addEventListener('scroll', () => {
         if (window.scrollY >= window.innerHeight) {
-          navbar.classList.add('bg-white');
+          navbar.classList.add('bg-scroll');
         } else {
-          navbar.classList.remove('bg-white');
+          navbar.classList.remove('bg-scroll');
         }
       });
     }
