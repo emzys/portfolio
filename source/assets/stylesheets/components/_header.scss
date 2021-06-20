@@ -1,3 +1,9 @@
+.banner {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,.8) 70%, $theme-green 70%);
+}
+
 header {
   width: 100vw;
   height: 100vh;
@@ -7,7 +13,6 @@ header {
   justify-content: center;
   align-items: flex-end;
   // background-color: rgba(0,0,0,.8);
-  background: linear-gradient(rgba(0,0,0,.8) 70%, $theme-green 70%);
   color: white;
 
   & > * {
@@ -21,6 +26,7 @@ header {
     text-align: left;
     // margin-bottom: 40px;
     padding-left: 40px;
+    padding-right: 24px;
 
     h1 {
       margin: 0;
@@ -31,8 +37,8 @@ header {
   img {
     width: 250px;
     // max-height: 200px;
-    // object-fit: cover;
-    object-fit: scale-down;
+    object-fit: cover;
+    // object-fit: scale-down;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
   }
@@ -88,7 +94,11 @@ header {
 
 @media (min-width: 768px) {
   header {
-    background: linear-gradient(rgba(0,0,0,.8) 73%, $theme-green 73%);
+    // background: linear-gradient(rgba(0,0,0,.8) 73%, $theme-green 73%);
+
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 
     .header-text {
       padding-left: 56px;
@@ -99,23 +109,32 @@ header {
     }
 
     img {
-      width: 500px;
+      margin-top: 100px;
+      min-width: 400px;
+      height: 500px;
       // max-height: 250px;
+      object-position: 0 0;
+
     }
   }
 }
 
 @media (min-width: 992px) {
   header {
-    background: linear-gradient(rgba(0,0,0,.8) 70%, $theme-green 70%);
+    width: 90%;
+    margin: 0 auto;
+    // background: linear-gradient(rgba(0,0,0,.8) 70%, $theme-green 70%);
+    justify-content: center;
 
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    // & > * {
+    // width: 50%;
+    // // height: 100%;
+    // }
 
     .header-text {
-      padding-left: 56px;
-      margin: 40px 0 90px;
+      padding-left: 24px;
+      // margin: 40px 0 90px;
+      margin-bottom: 0;
 
       h1 {
         font-size: 64px;
@@ -123,14 +142,15 @@ header {
     }
 
     img {
-      margin-top: 130px;
+      border-radius: 5px;
+      width: 100%;
       // min-width: 500px;
-      height: 500px;
+      // width: 80%;
+      // height: 500px;
       // min-height: 500px;
       // max-height: 600px;
       // max-height: 250px;
       // object-position: left;
-      object-position: 0 0;
     }
   }
 
@@ -138,9 +158,19 @@ header {
 
 @media (min-width: 1200px) {
   header {
+    width: 80%;
+    // margin: 0 auto;
+    // justify-content: center;
+
     img {
       width: 100%;
-      margin: 130px auto 0;
+      margin: 120px auto 0;
     }
+  }
+}
+
+@media (min-width: 1400px) {
+  header {
+    width: 70%;
   }
 }
