@@ -1,6 +1,10 @@
 // .about {
-//   padding: 15px;
-// }
+  //   padding: 15px;
+  // }
+
+.right-to-left{
+  flex-direction: row-reverse;
+}
 
 .about-text {
   p:last-of-type {
@@ -31,6 +35,25 @@
   border-radius: 5px;
 }
 
+.skills-icons {
+  align-items: center;
+
+  p {
+    font-size: 12px;
+  }
+
+  .upper {
+    margin: 30px auto 0;
+    font-weight: bold;
+    font-size: 20px;
+
+    i {
+      font-size: 40px;
+    }
+  }
+}
+
+
 @media (min-width: 768px) {
   // .about {
   //   padding: 30px;
@@ -51,6 +74,6 @@
     width: 30%;
   }
   .about-text {
-    width: 60%;
+    width: 65%;
   }
 }
