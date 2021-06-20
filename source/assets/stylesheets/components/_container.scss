@@ -4,12 +4,11 @@
   align-items: center;
   justify-content: center;
   max-width: 2560px;
-  padding: 70px 20px;
+  padding: 100px 20px;
 }
 
 @media (min-width: 992px)  {
   .container {
-    display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     width: 90%;
