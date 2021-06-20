@@ -1,7 +1,7 @@
 .banner {
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(rgba(0,0,0,.8) 70%, $theme-green 70%);
+  background: linear-gradient($theme-dark 70%, $theme-green 70%);
 }
 
 header {
@@ -12,7 +12,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  // background-color: rgba(0,0,0,.8);
+  // background-color: $theme-dark;
   color: white;
 
   & > * {
@@ -94,7 +94,7 @@ header {
 
 @media (min-width: 768px) {
   header {
-    // background: linear-gradient(rgba(0,0,0,.8) 73%, $theme-green 73%);
+    // background: linear-gradient($theme-dark 73%, $theme-green 73%);
 
     flex-direction: row;
     justify-content: space-between;
@@ -123,7 +123,7 @@ header {
   header {
     width: 90%;
     margin: 0 auto;
-    // background: linear-gradient(rgba(0,0,0,.8) 70%, $theme-green 70%);
+    // background: linear-gradient($theme-dark 70%, $theme-green 70%);
     justify-content: center;
 
     // & > * {
