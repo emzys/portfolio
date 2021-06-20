@@ -2,6 +2,7 @@
   width: 100vw;
   height: 100vh;
   background: linear-gradient($theme-dark 70%, $theme-green 70%);
+  overflow: hidden;
 }
 
 header {
