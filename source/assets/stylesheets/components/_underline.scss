@@ -1,0 +1,18 @@
+.underline {
+  margin: 0 auto;
+  width: 200px;
+  height: 3px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), $theme-dark, rgba(0, 0, 0, 0));
+}
+
+@media (min-width: 768px)  {
+  .underline {
+    width: 400px;
+  }
+}
+
+@media (min-width: 992px)  {
+  .underline {
+    width: 500px;
+  }
+}
