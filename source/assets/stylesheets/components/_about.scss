@@ -8,7 +8,7 @@
     // text-align: right;
   }
 
-  h1 {
+  .hi-header {
     display: flex;
     justify-content: space-between;
     a {
@@ -61,7 +61,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 922px) {
   .about-photo {
     display: flex;
     flex-direction: column;
