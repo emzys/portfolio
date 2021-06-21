@@ -1,16 +1,12 @@
 .navbar {
   justify-content: space-between;
-  // background: white;
   background: transparent;
+
+  .navbar-collapse {
+    flex-grow: 0;
+  }
 }
 
-.navbar .navbar-collapse {
-  flex-grow: 0;
-}
-
-// .navbar-lewagon .navbar-brand img {
-//   width: 40px;
-// }
 
 nav {
   text-transform: uppercase;
@@ -45,14 +41,11 @@ nav .navbar-nav {
 
   a {
     text-shadow: 2px 2px 3px black;
-
-
   }
 }
 
 .bg-scroll {
   background-color: $theme-dark;
-  // background-color: white;
 }
 
 .z-text {
@@ -65,14 +58,22 @@ nav .navbar-nav {
 // }
 
 
-.z-layer:nth-child(1) {
-	color: #ffc107;
-}
+// .z-layer:nth-child(1) {
+// 	color: #ffc107;
+// }
 
-.z-layer:nth-child(2) {
-	color: #4caf50;
-}
+// .z-layer:nth-child(2) {
+// 	color: #4caf50;
+// }
 
-.z-layer:nth-child(3) {
-	color: #3f51b5;
+// .z-layer:nth-child(3) {
+// 	color: #3f51b5;
+// }
+
+@media (min-width: 768px) {
+  nav {
+    .navbar-nav {
+      font-size: 28px;
+    }
+  }
 }
