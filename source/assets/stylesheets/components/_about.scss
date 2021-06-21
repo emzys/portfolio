@@ -1,6 +1,6 @@
-// .about {
-  //   padding: 15px;
-  // }
+.about {
+    padding: 15px;
+  }
 
 .about-text {
   p:last-of-type {
@@ -51,9 +51,9 @@
 
 
 @media (min-width: 768px) {
-  // .about {
-  //   padding: 30px;
-  // }
+  .about {
+    padding: 30px;
+  }
 
   .about-img {
     height: 250px;
