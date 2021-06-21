@@ -29,6 +29,7 @@
     "build": "NODE_ENV=production ./node_modules/webpack/bin/webpack.js --bail -p"
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
     "bootstrap": "^4.5.2",
     "core-js": "^3.6.4",
     "jquery": "^3.6.0",
