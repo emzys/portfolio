@@ -10,7 +10,7 @@
 
 nav {
   text-transform: uppercase;
-  transition: background-color .5s;
+  transition: background-color .3s;
 }
 
 nav a, nav i {
@@ -45,7 +45,8 @@ nav .navbar-nav {
 }
 
 .bg-scroll {
-  background-color: $theme-dark;
+  // background-color: $theme-dark;
+  background-color: rgba(0,0,0,.8);
 }
 
 .z-text {
