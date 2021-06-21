@@ -1,31 +1,13 @@
 import 'bootstrap';
 
-// $(document).scroll(function() {
-//         const scrollTopVal = $(document.scrollingElement.scrollTop).toArray();
-
-//         if (scrollTopVal[0] >= 200) {
-//             $('#navbar').addClass('shadow-bg')
-//         } else {
-//             $('#navbar').removeClass('shadow-bg')
-//         }
-//     })
-
-//     // fixes nav (closes it after clicking nav item on mobile devices)
-//     $(document).click(function (event) {
-//         const clickedItem = $(event.target);
-//         const opened = $('.navbar-collapse').hasClass("show");
-//         if (opened === true && !clickedItem.hasClass('navbar-toggler')) {
-//             $(".navbar-toggler").click();
-//         }
-//     });
-//   }
-
 document.addEventListener('DOMContentLoaded', () => {
+  // Adds background color on scroll
   const initUpdateNavbarOnScroll = () => {
     const navbar = document.querySelector('.navbar');
     if (navbar) {
       window.addEventListener('scroll', () => {
-        if (window.scrollY >= window.innerHeight) {
+        // if (window.scrollY >= window.innerHeight)
+        if (window.scrollY >= 100) {
           navbar.classList.add('bg-scroll');
         } else {
           navbar.classList.remove('bg-scroll');
@@ -36,12 +18,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
   initUpdateNavbarOnScroll();
 
+  // fixes nav (closes it after clicking nav item on mobile devices)
+  const navLinks = document.querySelectorAll('.nav-link');
+
+  navLinks.forEach((link) => {
+    link.addEventListener('click', () => {
+      document.querySelector('button.navbar-toggler').click();
+    });
+  });
+
+  // Z-index
   const ztxt = new Ztextify('.navbar-brand', {
-    depth: "30px",
+    depth: '30px',
     layers: 8,
     fade: true,
-    direction: "both",
-    event: "pointer",
-    eventRotation: "35deg"
+    direction: 'both',
+    event: 'pointer',
+    eventRotation: '35deg'
   });
 });
