@@ -3,6 +3,8 @@
   }
 
 .about-text {
+  text-align: center;
+
   p:last-of-type {
     margin: 0;
     // text-align: right;
@@ -10,8 +12,27 @@
 
   .hi-header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     a {
+      display: none;
+      color: $theme-dark;
+      font-size: 48px;
+      margin-left: 8px;
+      transition: color .3s, text-shadow .3s;
+
+      &:hover {
+        color: $theme-green;
+        text-shadow: 1px 1px 2px $theme-dark;
+      }
+    }
+  }
+
+  .social {
+    display: flex;
+    justify-content: center;
+    a {
+      display: block;
+      padding: 16px 8px;
       color: $theme-dark;
       font-size: 48px;
       margin-left: 8px;
@@ -71,5 +92,19 @@
   }
   .about-text {
     width: 65%;
+    text-align: left;
+
+    .hi-header {
+      justify-content: space-between;
+      a {
+        display: inline-block;
+      }
+    }
+
+    .social {
+      a {
+        display: none;
+      }
+    }
   }
 }
