@@ -13,6 +13,10 @@
     justify-content: space-between;
     width: 90%;
   }
+
+  .right-to-left {
+    flex-direction: row-reverse;
+  }
 }
 
 @media (min-width: 1200px) {
