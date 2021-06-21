@@ -10,6 +10,11 @@
     // text-align: right;
   }
 
+  h2 {
+    font-size: 40px;
+    margin: 16px 0 0;
+  }
+
   .hi-header {
     display: flex;
     justify-content: center;
@@ -80,6 +85,13 @@
     height: 250px;
     width: 250px;
   }
+
+  .about-text {
+    h2 {
+      font-size: 48px;
+      margin: 0 0 8px;
+    }
+  }
 }
 
 @media (min-width: 922px) {
@@ -93,6 +105,10 @@
   .about-text {
     width: 65%;
     text-align: left;
+
+    h2 {
+      text-align: center;
+    }
 
     .hi-header {
       justify-content: space-between;
