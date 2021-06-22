@@ -28,12 +28,12 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Z-index
-  const ztxt = new Ztextify('.navbar-brand', {
-    depth: '30px',
-    layers: 8,
-    fade: true,
-    direction: 'both',
-    event: 'pointer',
-    eventRotation: '35deg'
-  });
+  // const ztxt = new Ztextify('.navbar-brand', {
+  //   depth: '30px',
+  //   layers: 8,
+  //   fade: true,
+  //   direction: 'both',
+  //   event: 'pointer',
+  //   eventRotation: '35deg'
+  // });
 });
