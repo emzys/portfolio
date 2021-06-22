@@ -19,14 +19,28 @@ nav a, nav i {
   transition: color .3s;
 }
 
-.navbar-brand i {
-//  color: cadetblue;
-  color: $theme-green;
-}
+// .navbar-brand i {
+//   color: $theme-green;
+// }
 
 nav a:hover, nav i:hover {
   color: $theme-green;
   text-shadow: 2px 2px 3px black;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  border: 1px solid $light-gray;
+  border-radius: 5px;
+  filter: grayscale(80%);
+  transition: transform .3s, box-shadow .3s, filter .3s;
+
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 2px 2px 3px black;
+    filter: grayscale(0%);
+  }
 }
 
 nav .active {
@@ -50,10 +64,10 @@ nav .navbar-nav {
   background-color: rgba(0,0,0,.8);
 }
 
-.z-text {
-	transform: rotateY(15deg);
-	transition: transform 1s;
-}
+// .z-text {
+// 	transform: rotateY(0deg);
+// 	transition: transform 1s;
+// }
 
 // .z-layer:not(:first-child) {
 // 	color: #b73229;
