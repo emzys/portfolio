@@ -26,6 +26,7 @@ nav a, nav i {
 
 nav a:hover, nav i:hover {
   color: $theme-green;
+  text-shadow: 2px 2px 3px black;
 }
 
 nav .active {
@@ -39,9 +40,9 @@ nav .active {
 nav .navbar-nav {
   font-size: 17px;
 
-  a {
-    text-shadow: 2px 2px 3px black;
-  }
+  // a {
+  //   text-shadow: 2px 2px 3px black;
+  // }
 }
 
 .bg-scroll {
