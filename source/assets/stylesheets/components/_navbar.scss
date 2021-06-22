@@ -15,13 +15,13 @@ nav {
 
 nav a, nav i {
   padding: 0 10px;
-  color: #e9ecef;
+  color: $light-gray;
   transition: color .3s;
 }
 
 .navbar-brand i {
 //  color: cadetblue;
-  color: rgb(90, 190, 194);
+  color: $theme-green;
 }
 
 nav a:hover, nav i:hover {
