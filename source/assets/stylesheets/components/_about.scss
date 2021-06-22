@@ -81,11 +81,6 @@
     padding: 30px;
   }
 
-  .about-img {
-    height: 250px;
-    width: 250px;
-  }
-
   .about-text {
     h2 {
       font-size: 48px;
@@ -101,7 +96,13 @@
     justify-content: center;
     align-items: center;
     width: 30%;
+
+    .about-img {
+      height: 250px;
+      width: 250px;
+    }
   }
+
   .about-text {
     width: 65%;
     text-align: left;
