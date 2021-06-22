@@ -5,6 +5,5 @@
 *.cache
 *.log
 build
-dist
 node_modules
 yarn.lock
