@@ -3,22 +3,52 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 2560px;
   padding: 70px 30px;
 
   .projects-container {
     padding: 15px;
+    max-width: 2560px;
 
     .project-item {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      margin: 40px auto;
     }
   }
 
-  .device-macbook-pro {
-    transform: scale(.5);
+  .project-img {
+    // padding: 40px;
+    // height: 222px;
+    // width: 370px;
+    height: calc(444px * .4);
+    width: calc(740px * .4);
+
+    .device-macbook-pro {
+      transform: scale(.4) translate(-75%, -75%);
+    }
+  }
+
+  .project-img, .project-item-text {
+    margin: 15px;
+  }
+
+  .project-item-text {
+    text-align: center;
+
+    .project-large-device-header {
+      display: none;
+    }
+
+    p:first-of-type {
+      margin: 8px 0;
+
+      i {
+        font-size: 24px;
+        padding-right: 16px;
+      }
+    }
   }
 }
 
@@ -32,10 +62,42 @@
         flex-direction: row;
         justify-content: space-between;
       }
+
+      .right-to-left {
+        flex-direction: row-reverse;
+      }
     }
 
-    .right-to-left {
-      flex-direction: row-reverse;
+    .project-img {
+      // padding: 40px;
+      // height: 222px;
+      // width: 370px;
+      height: calc(444px * .5);
+      width: calc(740px * .5);
+
+      .device-macbook-pro {
+        transform: scale(.5) translate(-50%, -50%);
+      }
+    }
+
+    .project-img, .project-item-text {
+      margin: 30px;
+    }
+
+    .project-item-text {
+      text-align: left;
+
+      .project-large-device-header {
+        display: block;
+      }
+
+      p:first-of-type {
+        margin: 8px 0 16px;
+      }
+    }
+
+    .project-small-device-header {
+      display: none;
     }
   }
 }
