@@ -21,11 +21,13 @@ document.addEventListener('DOMContentLoaded', () => {
   // fixes nav (closes it after clicking nav item on mobile devices)
   const navLinks = document.querySelectorAll('.nav-link');
 
-  navLinks.forEach((link) => {
-    link.addEventListener('click', () => {
-      document.querySelector('button.navbar-toggler').click();
+  if (document.body.clientWidth <= 992) {
+    navLinks.forEach((link) => {
+      link.addEventListener('click', () => {
+        document.querySelector('button.navbar-toggler').click();
+      });
     });
-  });
+  }
 
   // Z-index
   // const ztxt = new Ztextify('.navbar-brand', {
