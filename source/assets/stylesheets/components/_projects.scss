@@ -53,7 +53,7 @@
 
       i {
         font-size: 24px;
-        padding: 0 8px;
+        padding: 0 8px 16px;
       }
     }
   }
@@ -99,7 +99,7 @@
       }
 
       p:first-of-type {
-        margin: 8px 0 16px;
+        margin: 8px 0 0;
         transform: translateX(-8px);
       }
     }
