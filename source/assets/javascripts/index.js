@@ -1,4 +1,5 @@
 import 'bootstrap';
+import AOS from 'aos';
 
 document.addEventListener('DOMContentLoaded', () => {
   // Adds background color on scroll
@@ -28,6 +29,8 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
+
+  AOS.init();
 
   // Z-index
   // const ztxt = new Ztextify('.navbar-brand', {
