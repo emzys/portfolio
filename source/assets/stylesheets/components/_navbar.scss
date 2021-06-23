@@ -7,6 +7,13 @@
   }
 }
 
+.navbar-toggler i {
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  border: 1px solid $light-gray;
+  border-radius: 5px;
+}
 
 nav {
   text-transform: uppercase;
