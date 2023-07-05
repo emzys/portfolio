@@ -1,0 +1,17 @@
+.img-animate::after {
+  content:'';
+  display:block;
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  opacity:1;
+  transform: translateX(0%);
+  transition: transform 1s cubic-bezier(.16,.67,.67,.98) .5s;
+  background: $light-gray;
+}
+
+.show-header-img::after {
+  transform: translateX(101%);
+}

@@ -42,12 +42,22 @@ header {
   }
 
   img {
-    width: 250px;
+    // width: 250px;
+    width: 100%;
     // max-height: 200px;
     object-fit: cover;
     // object-fit: scale-down;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
+  }
+
+  .img-animate {
+    display: block;
+    position: relative;
+    width: 250px;
+    overflow: hidden;
+    // border-top-left-radius: 5px;
+    // border-bottom-left-radius: 5px;
   }
 }
 
@@ -66,7 +76,7 @@ header {
       }
     }
 
-    img {
+    .img-animate {
       width: 270px;
       // max-height: 250px;
     }
@@ -88,7 +98,7 @@ header {
       }
     }
 
-    img {
+    .img-animate {
       width: 300px;
       // max-height: 250px;
     }
@@ -108,6 +118,10 @@ header {
       }
     }
 
+    .img-animate {
+      width: 350px;
+      // max-height: 250px;
+    }
     img {
       width: 350px;
       // max-height: 250px;
@@ -136,10 +150,24 @@ header {
       }
     }
 
-    img {
+    .img-animate {
       margin-top: 100px;
+      width: fit-content;
+      // width: unset;
       min-width: 400px;
       height: 500px;
+      // max-height: 250px;
+      // object-position: 0 0;
+    }
+
+    img {
+      // margin-top: 100px;
+      min-width: 400px;
+      height: 500px;
+      width: 100%;
+      // width: unset;
+      // min-width: 400px;
+      // height: 500px;
       // max-height: 250px;
       object-position: 0 0;
 
@@ -174,7 +202,7 @@ header {
       }
     }
 
-    img {
+    .img-animate {
       border-radius: 5px;
       width: 100%;
       // min-width: 500px;
@@ -184,6 +212,9 @@ header {
       // max-height: 600px;
       // max-height: 250px;
       // object-position: left;
+    }
+    img {
+      border-radius: 5px;
     }
   }
 
@@ -195,7 +226,7 @@ header {
     // margin: 0 auto;
     // justify-content: center;
 
-    img {
+    .img-animate {
       width: 100%;
       margin: 120px auto 0;
     }

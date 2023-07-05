@@ -32,6 +32,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   AOS.init();
 
+  document.querySelector(".img-animate").classList.add("show-header-img");
+
   // Z-index
   // const ztxt = new Ztextify('.navbar-brand', {
   //   depth: '30px',
